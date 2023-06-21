@@ -61,12 +61,12 @@ body{
     transition: 0.4s ease;
 }
 
-.search-box button:hover{
-    color: #0044ff;
+.search-bar button:hover{
+    color: #90b0fa;
     background: #6488ea
 }
 
-.serach-box i{
+.serach-bar i{
     position: absolute;
     color: #6488ea;
     font-size: 28px;
