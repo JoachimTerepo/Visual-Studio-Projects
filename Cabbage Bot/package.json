@@ -1,0 +1,15 @@
+{
+  "name": "cabbage-bot",
+  "version": "1.0.0",
+  "description": "discord bot for spotify and youtube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JoachimTerepo",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.3.1"
+  }
+}
