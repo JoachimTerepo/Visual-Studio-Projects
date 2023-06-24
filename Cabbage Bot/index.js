@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+const { Manager } = require("erela.js");
 const { Client, IntentsBitField } = require("discord.js");
 
 const client = new Client({
@@ -18,6 +19,17 @@ client.on("ready", (c) => {
 client.on("messageCreate", (msg) => {
   if (msg.content === "Josh's a Cabbage Cunt") {
     msg.reply("Yes, I agree! ");
+  }
+});
+
+client.on("interactionCreate", (interaction) => {
+  if (!interaction.isChatInputCommand()) return;
+
+  if (interaction.commandName === "add") {
+    const num1 = interaction.options.get("first-number").value;
+    const num2 = interaction.options.get("second-number").value;
+
+    interaction.reply(`The sum is ${num1 + num2}`);
   }
 });
 
